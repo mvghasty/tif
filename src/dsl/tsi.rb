@@ -21,5 +21,5 @@ if ARGV[0]
   interpreter = TSI.new
   interpreter.load_and_execute(ARGV[0])
 else
-  puts "Por favor, forneça o caminho do arquivo .tff como argumento." 
+  puts "Please provide the path of the .tff file as an argument." 
 end 
