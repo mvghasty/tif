@@ -1,0 +1,13 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+  echo "Uso: ./tcsi <arquivo.tff>"
+  exit 1
+fi
+
+if [ ! -f "$1" ]; then
+  echo "Arquivo $1 não encontrado!"
+  exit 1
+fi
+
+ruby src/tiflib.rb "$1"
