@@ -1,13 +1,12 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-  echo "Usage: ./tcsi <some-thing.tff>"
+  echo "Uso: ./tcsi <arquivo.tff>"
   exit 1
 fi
 
 if [ ! -f "$1" ]; then
-  echo "File $1 not found
-!"
+  echo "Arquivo $1 não encontrado!"
   exit 1
 fi
 
